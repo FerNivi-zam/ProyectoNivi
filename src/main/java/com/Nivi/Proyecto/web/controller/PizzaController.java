@@ -2,7 +2,7 @@ package com.Nivi.Proyecto.web.controller;
 
 
 
-import com.Nivi.Proyecto.Presitence.entity.PizzaEntity;
+import com.Nivi.Proyecto.persistence.entity.PizzaEntity;
 import com.Nivi.Proyecto.service.PizzaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

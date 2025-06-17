@@ -30,12 +30,6 @@
 		<java.version>22</java.version>
 	</properties>
 	<dependencies>
-		<!-- dependencia para conectar a la base de datos oracle -->
-		<dependency>
-			<groupId>com.oracle.database.jdbc</groupId>
-			<artifactId>ojdbc8</artifactId>
-			<version>10.0.0</version>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>

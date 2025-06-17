@@ -1,8 +1,8 @@
 package com.Nivi.Proyecto.service;
 
 
-import com.Nivi.Proyecto.Presitence.entity.PizzaEntity;
-import com.Nivi.Proyecto.Presitence.respository.PizzaRepository;
+import com.Nivi.Proyecto.persistence.entity.PizzaEntity;
+import com.Nivi.Proyecto.persistence.repository.PizzaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

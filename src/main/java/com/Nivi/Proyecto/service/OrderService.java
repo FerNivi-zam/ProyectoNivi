@@ -1,8 +1,8 @@
 package com.Nivi.Proyecto.service;
 
 
-import com.Nivi.Proyecto.Presitence.entity.OrderEntity;
-import com.Nivi.Proyecto.Presitence.respository.OrderRepository;
+import com.Nivi.Proyecto.persistence.entity.OrderEntity;
+import com.Nivi.Proyecto.persistence.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,7 @@
 package com.Nivi.Proyecto.web.controller;
 
 
-import com.Nivi.Proyecto.Presitence.entity.OrderEntity;
+import com.Nivi.Proyecto.persistence.entity.OrderEntity;
 import com.Nivi.Proyecto.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
