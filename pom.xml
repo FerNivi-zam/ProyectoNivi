@@ -30,6 +30,12 @@
 		<java.version>22</java.version>
 	</properties>
 	<dependencies>
+		<!-- dependencia para conectar a la base de datos oracle -->
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc8</artifactId>
+			<version>10.0.0</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -63,11 +69,17 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<!--Version del maven, no tenías peusto nada -->
+				<version>3.8.1</version>
 				<configuration>
+					<!--El soruce y el tarfet del java es para que se use la version que se tiene configurada en el properties-->
+					<source>${java.version}</source>
+					<target>${java.version}</target>
 					<annotationProcessorPaths>
 						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
+							<version>1.18.30</version>
 						</path>
 					</annotationProcessorPaths>
 				</configuration>
