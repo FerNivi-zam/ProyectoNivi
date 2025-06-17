@@ -9,6 +9,8 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+// Se importa:
+import java.math.BigDecimal;
 
 
 @Entity
@@ -19,7 +21,10 @@ import lombok.Setter;
 public class PizzaEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_pizza", nullable = false,columnDefinition = "INT(8)")
+    // Se elimina esta linea
+    //@Column(name = "id_pizza", nullable = false,columnDefinition = "INT(8)")
+    // Se reemplaza por esta
+    @Column(name = "id_pizza", nullable = false)
     private Integer idPizza;
 
     @Column(nullable = false, length = 30, unique = true)
@@ -28,8 +33,11 @@ public class PizzaEntity {
     @Column(nullable = false, length = 150)
     private String description;
 
-    @Column(nullable = false, columnDefinition = "Decimal(5,2)")
-    private Double price;
+    // Se cambia esta
+    //@Column(nullable = false, columnDefinition = "Decimal(5,2)")
+    // Por la nueva linea y se cambia el tipo de dato de Double a BigDecimal ya que se necesita preciciiosn segun lo que voe
+    @Column(nullable = false, precision = 5, scale = 2)
+    private BigDecimal price;
 
     @Column
     private Boolean vegetarian;
@@ -54,7 +62,7 @@ public class PizzaEntity {
         return description;
     }
 
-    public Double getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
